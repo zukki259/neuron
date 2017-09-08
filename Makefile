@@ -2,7 +2,8 @@ CC=gcc
 FLAGS=-Wall -O
 LIBMATH=-lm
 
-
+test_readfile: readfile.o
+	$(CC) $(FLAGS) -o $@ $^
 test_sigmoid: test_sigmoid.o sigmoid.o
 	$(CC) $(FLAGS) -o $@ $^ $(LIBMATH)
 
