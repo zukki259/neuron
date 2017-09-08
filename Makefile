@@ -11,3 +11,6 @@ test_sigmoid: test_sigmoid.o sigmoid.o
 
 test_sigmoid.o: sigmoid.h
 sigmoid.c: sigmoid.h
+
+clean:
+	rm -f *~ *.o test_sigmoid
